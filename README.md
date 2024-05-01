@@ -64,6 +64,20 @@
     </module>
 ```
 
+### VariableDeclarationUsageDistance
+기본값이 3인데 너무 빡빡한거 아닌가? 이 속성은 사용하고 싶지 않다. 일단 크게 잡아 놓자.
+https://checkstyle.sourceforge.io/config_coding.html#VariableDeclarationUsageDistance
+**before**
+```
+    <module name="VariableDeclarationUsageDistance"/>
+```
+**after**
+```
+    <module name="VariableDeclarationUsageDistance">
+      <property name="allowedDistance" value="30"/>
+    </module>
+```
+
 ### SingleLineJavadoc
 
 **before**
